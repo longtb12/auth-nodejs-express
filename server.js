@@ -38,7 +38,7 @@ app.use(function(req, res) {
     res.status(404).send({url: req.originalUrl + ' not found'})
 })
 
-app.use('/static', express.static(__dirname+'/images'))
+//app.use('/static', express.static(__dirname+'/images'))
 
 app.listen(PORT,()=>{
     console.log(`Server start at ${PORT}`)
